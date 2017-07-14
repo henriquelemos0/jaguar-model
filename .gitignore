@@ -9,6 +9,9 @@
 *.tar.gz
 *.rar
 
+# But not gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
 # Eclipse project files
 .classpath
 .project
