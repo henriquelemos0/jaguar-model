@@ -1,3 +1,3 @@
 # Jaguar Model
 
-This is a try to isolate the objetcs used by [Jaguar](https://github.com/saeg/jaguar)
+This is an attempt to isolate the objetcs used by [Jaguar](https://github.com/saeg/jaguar)
