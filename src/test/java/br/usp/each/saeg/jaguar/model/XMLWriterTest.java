@@ -17,7 +17,7 @@ import org.junit.Test;
 public class XMLWriterTest {
 
     private static final String LINE_XML_FILE = "src/test/resources/faultclassification_line.xml";
-    private static final String DUA_XML_FILE = "    src/test/resources/faultclassification_dua.xml";
+    private static final String DUA_XML_FILE = "src/test/resources/faultclassification_dua.xml";
 
     @Test
     public void readAndWriteLineXMLtest() {
