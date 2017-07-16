@@ -1,14 +1,15 @@
 package br.usp.each.saeg.jaguar.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
-import java.util.Collection;
 
 /**
  * The basic core element that store the fault localization coefficients
  *
  * Created by henrique on 7/9/17.
  */
+@XmlRootElement
 public abstract class SuspiciousElement {
 
     protected String location;
@@ -42,7 +43,7 @@ public abstract class SuspiciousElement {
     /**
      * Return the location of the element (package.class.method.linenumber)
      */
-    //@XmlAttribute
+    @XmlAttribute
     public String getLocation() {
         return location;
     }

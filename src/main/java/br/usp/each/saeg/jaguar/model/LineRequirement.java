@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * Created by henrique on 7/9/17.
  */
-@XmlRootElement(name = "lineRequirement")
+@XmlRootElement
 public class LineRequirement extends Requirement {
 
     @Override

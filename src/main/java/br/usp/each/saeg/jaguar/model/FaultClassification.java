@@ -2,6 +2,8 @@ package br.usp.each.saeg.jaguar.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlSeeAlso;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,8 @@ import java.util.List;
  *
  * Created by henrique on 7/16/17.
  */
+@XmlRootElement(name = "FlatFaultClassification")
+@XmlSeeAlso({DuaRequirement.class, LineRequirement.class})
 public class FaultClassification {
 
     private String project;
