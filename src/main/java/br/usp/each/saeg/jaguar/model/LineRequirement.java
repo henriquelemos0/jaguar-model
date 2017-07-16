@@ -18,8 +18,7 @@ public class LineRequirement extends Requirement {
     @Override
     public String toString() {
         return "LineRequirement{" +
-                "Type='" + getType() + '\'' +
-                ", location='" + location + '\'' +
+                "location='" + location + '\'' +
                 ", position=" + position +
                 ", suspiciousValue=" + suspiciousValue +
                 ", cef=" + cef +
