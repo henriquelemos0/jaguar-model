@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlatFaultClassification heuristic="TARANTULA" project="fault localization" requirementType="LINE">
+    <requirements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lineRequirement" type="LINE" cef="0" cep="0" cnf="0" cnp="0" location="package.Class:11" position="1" suspicious-value="0"/>
+    <requirements xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="lineRequirement" type="LINE" cef="4" cep="0" cnf="1" cnp="5" location="package.Class:22" position="1" suspicious-value="1"/>
+</FlatFaultClassification>
