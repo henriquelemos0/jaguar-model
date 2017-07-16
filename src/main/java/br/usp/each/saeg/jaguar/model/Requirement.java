@@ -6,6 +6,8 @@ import java.util.Collections;
 import javax.xml.bind.annotation.XmlAttribute;
 
 /**
+ * Element that should be extended by all the requirements.
+ *
  * Created by henrique on 7/9/17.
  */
 public abstract class Requirement extends SuspiciousElement {
@@ -16,11 +18,6 @@ public abstract class Requirement extends SuspiciousElement {
 
     @XmlAttribute
     public abstract Type getType();
-
-    @Override
-    public Collection<? extends SuspiciousElement> getChildren() {
-        return Collections.EMPTY_LIST;
-    }
 
     @Override
     public String toString() {

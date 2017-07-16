@@ -3,13 +3,12 @@ package br.usp.each.saeg.jaguar.model;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
+ * To test the fault classification behavior
+ *
  * Created by henrique on 7/16/17.
  */
-public class FautlClassificationTest {
+public class FaultClassificationTest {
 
     public void equals(){
         FaultClassification fc1 = new FaultClassification();

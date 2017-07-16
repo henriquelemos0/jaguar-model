@@ -1,11 +1,12 @@
 package br.usp.each.saeg.jaguar.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlTransient;
 import java.math.BigDecimal;
 import java.util.Collection;
 
 /**
+ * The basic core element that store the fault localization coefficients
+ *
  * Created by henrique on 7/9/17.
  */
 public abstract class SuspiciousElement {
@@ -16,18 +17,12 @@ public abstract class SuspiciousElement {
     protected BigDecimal suspiciousValue = BigDecimal.ZERO;
 
     /**
-     *  Fields to calculate suspicioiuness
+     *  Fields used to calculate the element suspicious value
      */
     protected int cef = 0;
     protected int cep = 0;
     protected int cnf = 0;
     protected int cnp = 0;
-
-    /**
-     * Return its children (e.g. packages should return classes). If it has no
-     * children (e.g. Requirements) return null.
-     */
-    public abstract Collection<? extends SuspiciousElement> getChildren();
 
     /**
      * Return the position of the element regarding the suspicious rank
@@ -116,8 +111,7 @@ public abstract class SuspiciousElement {
     }
 
     /**
-     * Return the suspicious value of the element. For package, class or method
-     * represent its children's maximum suspicious value.
+     * Return the suspicious value of the element.
      */
     @XmlAttribute(name = "suspicious-value")
     public BigDecimal getSuspiciousValue() {
@@ -125,8 +119,7 @@ public abstract class SuspiciousElement {
     }
 
     /**
-     * Set the suspicious value of the element. For package, class or method
-     * represent its children's maximum suspicious value.
+     * Set the suspicious value of the element.
      */
     public void setSuspiciousValue(BigDecimal suspiciousValue) {
         this.suspiciousValue = suspiciousValue;

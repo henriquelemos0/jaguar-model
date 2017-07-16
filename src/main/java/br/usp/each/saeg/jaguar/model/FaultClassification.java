@@ -13,19 +13,19 @@ import java.util.List;
  */
 public class FaultClassification {
 
-    protected String project;
-    protected String heuristic;
-    protected Requirement.Type requirementType;
-    protected Long timeSpent;
+    private String project;
+    private String heuristic;
+    private Requirement.Type requirementType;
+    private Long timeSpent;
+
+    private List<Requirement> requirements = new ArrayList<>();
 
     /**
      * Return a 'flat' list of {@link SuspiciousElement}.
-     * If it has a specific strucure, it will iterate over the subelements.
+     * If it has a specific structure, it will iterate over the sub elements.
      *
      * @return A 'flat' list of {@link SuspiciousElement}
      */
-    private List<Requirement> requirements = new ArrayList<Requirement>();
-
     @XmlElement
     public List<Requirement> getRequirements() {
         return requirements;

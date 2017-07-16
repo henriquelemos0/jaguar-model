@@ -33,7 +33,6 @@ public class LineRequirementTest {
         Assert.assertEquals(new Integer(2), line.getCep());
         Assert.assertEquals(new Integer(3), line.getCnf());
         Assert.assertEquals(new Integer(4), line.getCnp());
-        Assert.assertEquals(Collections.EMPTY_LIST, line.getChildren());
         Assert.assertEquals("LineRequirement{location='package.Class:11', position=11, suspiciousValue=100, cef=1, cep=2, cnf=3, cnp=4}", line.toString());
 
     }

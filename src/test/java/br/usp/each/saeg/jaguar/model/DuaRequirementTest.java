@@ -43,7 +43,6 @@ public class DuaRequirementTest {
         Assert.assertEquals(new Integer(7), dua.getTarget());
         Assert.assertEquals(new Integer(8), dua.getIndex());
         Assert.assertEquals("i", dua.getVar());
-        Assert.assertEquals(Collections.EMPTY_LIST, dua.getChildren());
         Assert.assertEquals("DuaRequirement{location='package.Class:11', position=11, suspiciousValue=100, def=5, use=6, target=7, var='i', index=8, cef=1, cep=2, cnf=3, cnp=4}", dua.toString());
 
     }
