@@ -1,5 +1,6 @@
 package br.usp.each.saeg.jaguar.model;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -7,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * Created by henrique on 7/9/17.
  */
-@XmlRootElement(name = "duaRequirement")
+@XmlRootElement
 public class DuaRequirement extends Requirement {
 
     @Override
@@ -21,6 +22,7 @@ public class DuaRequirement extends Requirement {
     private Integer target;
     private String var;
 
+    @XmlAttribute
     public Integer getIndex() {
         return index;
     }
@@ -29,6 +31,7 @@ public class DuaRequirement extends Requirement {
         this.index = index;
     }
 
+    @XmlAttribute
     public Integer getDef() {
         return def;
     }
@@ -37,6 +40,7 @@ public class DuaRequirement extends Requirement {
         this.def = def;
     }
 
+    @XmlAttribute
     public Integer getUse() {
         return use;
     }
@@ -45,6 +49,7 @@ public class DuaRequirement extends Requirement {
         this.use = use;
     }
 
+    @XmlAttribute
     public Integer getTarget() {
         return target;
     }
@@ -53,6 +58,7 @@ public class DuaRequirement extends Requirement {
         this.target = target;
     }
 
+    @XmlAttribute
     public String getVar() {
         return var;
     }
@@ -78,17 +84,4 @@ public class DuaRequirement extends Requirement {
                 ", cnp=" + cnp +
                 '}';
     }
-//    @Override
-//    public String toString() {
-//        return "DuaRequirement{" +
-//                "Type='" + getType() + '\'' +
-//                ", location='" + location + '\'' +
-//                ", position=" + position +
-//                ", suspiciousValue=" + suspiciousValue +
-//                ", cef=" + cef +
-//                ", cep=" + cep +
-//                ", cnf=" + cnf +
-//                ", cnp=" + cnp +
-//                '}';
-//    }
 }
