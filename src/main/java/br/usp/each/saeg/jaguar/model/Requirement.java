@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 public abstract class Requirement extends SuspiciousElement {
 
     public enum Type {
-        LINE, DUA;
+        LINE, DUA
     }
 
     @XmlAttribute
