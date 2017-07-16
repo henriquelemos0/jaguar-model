@@ -1,6 +1,3 @@
-# Jaguar-core
-/src/test/resources/faultclassification*.xml
-
 # Java class files
 *.class
 
